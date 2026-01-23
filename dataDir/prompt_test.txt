@@ -1,0 +1,166 @@
+////////////////////
+a description of scores:
+0.3 – 0.4	“Potentially relevant”	Requires human or contextual judgment. Could be a relevant skill in the domain, or could be a weak semantic drift. This is the gray area.
+0.4 – 0.5	“Likely relevant”	There’s a stronger semantic connection; for most practical purposes, a hiring manager would probably see it as aligned with the job.
+0.5 – 0.6	“Clearly relevant”	High semantic alignment; almost always matches the intent of the fragment to the keyword. Safe to include in summaries without much risk of misrepresentation.
+> 0.6	“Very strong / near-certainty”	Essentially a semantic synonym or direct match. Safe to assume relevance. Very low risk of introducing misleading claims.
+
+my prompt:
+keeping the yaml formatting, 
+rewrite the sentences using the provided cosine similarity words, OR disregard that fragment due to semantical mismatch.
+Then, fill in the full section with the sentence formed by the 3 fragments, OR write n/a if the previous step disregarded at least one fragment :
+
+# summary sentence of what you did at this job, this sentence is basic and keyword loaded      
+summary: "Developed scalable APIs using Python and AWS Lambda to support core platform features" : ( Google Cloud Platform : 0.489 ),( Data pipelines : 0.456 ),( On-prem infrastructure : 0.377 ),( Kubernetes : 0.370 ),( CloudFormation : 0.310 )
+      # a collection of sentences composed of a what, how, and result sentence fragment
+      experiences:
+        - what: "Improved CI/CD pipelines" : ( Data pipelines : 0.523 ),( Firmware development : 0.289 ),( Real-time operating systems : 0.282 ),( Roadmap planning : 0.266 ),( On-prem infrastructure : 0.263 )
+          how: "Used Jenkins to automate staging deployments" : ( Scrum master : 0.264 ),( Engineering Manager : 0.253 ),( Ansible : 0.251 ),( Site Reliability Engineering : 0.242 ),( App Store deployment : 0.234 )
+          result: "Reduced deployment time by 40%" : ( App Store deployment : 0.360 ),( Google Play deployment : 0.290 ),( LESS : 0.233 ),( Site Reliability Engineering : 0.203 ),( Real-time operating systems : 0.194 )
+        - what: "Implemented authentication system" : ( Identity and Access Management : 0.559 ),( Cryptography : 0.473 ),( Security engineering : 0.469 ),( Security hardening : 0.465 ),( Real-time operating systems : 0.323 )
+          how: "Integrated OAuth2 with company login" : ( Identity and Access Management : 0.376 ),( GDPR compliance : 0.157 ),( Google Cloud Platform : 0.146 ),( Stakeholder management : 0.145 ),( Cross-functional coordination : 0.144 )
+          result: "Enhanced login security and user experience" : ( Security hardening : 0.531 ),( Identity and Access Management : 0.509 ),( Security engineering : 0.476 ),( Network administration : 0.280 ),( GDPR compliance : 0.260 )
+
+
+
+you will get a yaml resume. keep the yaml structure. You will look at the "summary" and the "what / how / result / full" sections. For each section, appended in bubbles will be the most relatable job keywords. You will try to inject as many of those keywords into the sentences, and then analyze if they make sense to inject. For instance, if a lie is created by injecting the keyword, refrain from doing so for that keyword. If no keywords are added in because of this, fill the "full" section with n/a), or else write in a full complete sentence using the injected versions of the what/how/result fragments.
+the collection of bubbles words is your domain. filter out candidates that do not fit it.
+the summary should either be revised with keywords or removed because it is not in your domain
+
+you are a hiring manager looking for a candidate. you will get a yaml resume. keep the yaml structure. you will look at the candidate's "summary" and the "what / how / result / full" sections. For each section, you have already appended the closest matching keywords from your job description. If the closest matching keywords are actually weak to the candidate's sentence, that section entry is null. If the closest matching keywords are relative to the candidates sentence, rewrite that section using the closest matching keywords, and then perform this test on the sentence again. the collection of bubbles words is your domain. filter out candidates that do not fit it.
+
+-
+You are a hiring manager evaluating a candidate. You will receive a YAML-formatted resume — keep the YAML structure intact.
+
+You will analyze the candidate’s summary and the what / how / result / full sections. Each section already has the closest matching keywords from your job description appended.
+For each keyword-sentence pair, consider if the keyword is semantically related.
+If a keyword is weakly related, remove that keyword.
+If a keyword is a tool that is not directly related to the tool used in the sentence, remove that keyword.
+If all closest matching keywords are weakly related and removed, rewrite that candidate’s sentence as "null".
+
+If the closest matching keywords are strongly related to the candidate’s sentence, rewrite the sentence to better reflect those keywords, and then retest it for alignment.
+
+Combine the what, how, and result sentences into a single cohesive sentence within the full section.
+
+The collection of bubble words represents your domain vocabulary.
+
+Filter out candidates who do not fit this domain based on these evaluations.
+-
+You are a hiring manager evaluating a candidate’s resume. You will receive a YAML-formatted resume. Keep the YAML structure intact.
+
+Your task is to carefully evaluate the intent and scope of each sentence in the candidate’s summary and experiences, not just keyword matches. Each section already has closest matching keywords appended in (parenthesis).
+
+For each keyword-sentence pair:
+
+Determine if the candidate’s sentence genuinely reflects the domain implied by the keyword.
+
+If the keyword is weakly related or only tangentially referenced, remove it.
+
+If all keywords are weakly related and the candidate’s sentence does not truly demonstrate work in the target domain, replace that sentence with "null".
+
+If the candidate’s sentence clearly demonstrates relevant intent, rewrite it to better reflect the keywords, then retest alignment.
+
+When combining the what/how/result sections into the full section, ensure the combined sentence accurately reflects the scope and intent of the work in the domain.
+
+The collection of bubble words represents your domain vocabulary. Use it as a reference for domain relevance, not just as a keyword checklist.
+
+Finally, filter out candidates whose actual work intent and scope do not match the domain, even if some keywords superficially match.
+-
+You will be given a yaml resume. Keep the yaml format.
+You will look at the summary, what, how, and result sections.
+The summary section will be a complete sentence, then [Appended] -> (Keywords)
+The what/how/result sections will be sentence fragments, then [Appended] -> (Keywords)
+You will see if any of the keywords are either directly in the section, or if they are indirectly in by semantics and implied domain.
+If a section after keyword analysis fails to be directly or indirectly relevant, disqualify that section.
+If a keyword is a tool, and the tool mentioned in the sentence is not generally related in the domain workflow, disqualify that section.
+If a what/how/result trio qualify, rewrite that full sentence with the relevant keywords injected and into the full section.
+If the summary qualifies, rewrite that summary with the relevant keywords injected into the summary section.
+As a hiring manager, it is better to check the candidate resume to make sure you do not accept a candidate that does not match the keyword-implied domain.
+
+//////////////////
+Pretend to be a resume tailorer.
+You will receive a YAML-like input where each fragment (summary, experiences → what/how/result) has an associated cosine similarity score from an MPNet embedding model. Process it as follows:
+
+Fragment evaluation based on cosine score:
+
+<0.4 → Scores here should not be strictly interpreted. Sentence Transformer failed to distinguish this word as relevant, but it could have made a false flag! Use simulated human judgement.
+
+0.4–0.5 → Likely relevant: May be rewritten using the provided keywords to improve semantic alignment. Include only if contextually relevant.
+
+0.5–0.6 → Clearly relevant: Safe to include; can be rewritten or used as-is.
+
+>0.6 → Very strong / near-certainty: Include as-is; safe to assume relevance.
+
+For summary scores specifically, be biased and add .1 extra.
+
+
+Preserve the YAML structure exactly.
+
+Include only rewritten sentences or n/a where human judgement fails it.
+
+Do not introduce new skills or keywords that were not in the original fragment list.
+
+
+Consider the practical domain relevance of each keyword to the fragment. The domain context is dynamic to each set of top keywords and sentence.
+Bias a keyword if the keyword itself generic and relevant to the sentence.
+
+If something has a similarity score under 0.4, disregard the given cosine score, tailor the fragment, and personally evaluate the keyword to the sentence.
+
+For a given section: if what/how/result fragments are not eliminated, rewrite the what/how/result as a complete sentence into the full entry.
+
+Input:
+summary: 'Developed scalable APIs using Python and AWS Lambda to support core platform features: (AWS Lambda : 0.70) (Cloud infrastructure : 0.47) (AWS : 0.46) (Cloud-native : 0.44) (Scalable systems : 0.41)'
+    experiences:
+    - what: 'Improved CI/CD pipelines: (CI/CD : 0.67) (Continuous delivery : 0.46) (Infrastructure-as-code : 0.40) (DevOps : 0.35) (Software engineering : 0.33)'
+      how: 'Used Jenkins to automate staging deployments: (Jenkins : 0.57) (Automation : 0.32) (GitHub Actions : 0.28) (DevOps : 0.28) (Continuous delivery : 0.27)'
+      result: 'Reduced deployment time by 40%: (Deployment : 0.50) (DevOps : 0.35) (Continuous delivery : 0.33) (Infrastructure scalability : 0.25) (Software engineering : 0.24)'
+      full: null
+    - what: 'Implemented authentication system: (Authentication : 0.70) (Authorization : 0.47) (Security : 0.44) (JWT : 0.37) (OAuth2 : 0.36)'
+      how: 'Integrated OAuth2 with company login: (OAuth2 : 0.69) (JWT : 0.37) (Authentication : 0.32) (Authorization : 0.28) (API design : 0.22)'
+      result: 'Enhanced login security and user experience: (Authentication : 0.54) (Security : 0.50) (Authorization : 0.33) (OAuth2 : 0.33) (JWT : 0.33)'
+      full: null
+
+summary: 'Built and deployed personal portfolio using React and Netlify to showcase projects: (Backend development : 0.31) (React : 0.29) (Netlify : 0.26) (Cloud-native : 0.24) (Infrastructure-as-code : 0.22)'
+    experiences:
+    - what: 'Implemented authentication system: (Authentication : 0.70) (Authorization : 0.47) (Security : 0.44) (JWT : 0.37) (OAuth2 : 0.36)'
+      how: 'Integrated OAuth2 with company login: (OAuth2 : 0.69) (JWT : 0.37) (Authentication : 0.32) (Authorization : 0.28) (API design : 0.22)'
+      result: 'Enhanced login security and user experience: (Authentication : 0.54) (Security : 0.50) (Authorization : 0.33) (OAuth2 : 0.33) (JWT : 0.33)'
+      full: null
+
+ summary: 'Developed scalable APIs using Python and AWS Lambda to support core platform features: (AWS Lambda : 0.70) (Cloud infrastructure : 0.47) (AWS : 0.46) (Cloud-native : 0.44) (Scalable systems : 0.41)'
+    experiences:
+    - what: 'Created internal dashboard: (Backend development : 0.36) (Monitoring : 0.28) (Chart.js : 0.25) (DevOps : 0.22) (OAuth2 : 0.21)'
+      how: 'Used Flask and Chart.js to visualize deployment metrics for the DevOps team: (Chart.js : 0.50) (DevOps : 0.42) (Flask : 0.36) (Deployment : 0.35) (Backend development : 0.33)'
+      result: 'Improved visibility into build performance and error tracking: (DevOps : 0.33) (Monitoring : 0.29) (Infrastructure-as-code : 0.29) (Software engineering : 0.28) (Continuous delivery : 0.28)'
+      full: null
+    - what: 'Wrote automation scripts: (Scripting : 0.67) (Automation : 0.66) (Python : 0.38) (Bash : 0.38) (Software engineering : 0.30)'
+      how: 'Used Python and Bash to automate log rotation and cleanup on development servers: (Scripting : 0.35) (DevOps : 0.33) (Bash : 0.32) (Automation : 0.31) (Python : 0.28)'
+      result: 'Saved 5+ hours per week in manual maintenance: (Automation : 0.34) (Maintainable code : 0.28) (DevOps : 0.25) (Continuous delivery : 0.24) (Problem-solving : 0.23)'
+      full: null
+    - what: 'Participated in code reviews: (Code reviews : 0.72) (Software engineering : 0.32) (Maintainable code : 0.32) (Team collaboration : 0.28) (GitHub Actions : 0.27)'
+      how: 'Reviewed pull requests and contributed documentation improvements: (GitHub Actions : 0.43) (Code reviews : 0.40) (Documentation : 0.33) (Maintainable code : 0.21) (API design : 0.21)'
+      result: 'Helped improve code readability and onboarding experience for new interns: (Maintainable code : 0.39) (Code reviews : 0.38) (Software engineering : 0.34) (Team collaboration : 0.31) (Infrastructure-as-code : 0.28)'
+      full: null
+
+
+////////////////////////////////////
+
+Step 1:
+be a employer. you are going to look at a resume entry, and for each summary, or 3-part fragment of one explanation, there will be appended some of your keywords that you are looking for, and cosine similarity scores that are less certain of relevance the lower the score is. check the semantic of the resume and also the potential matched keywords, and indicate if that entry is something that you would want to see, or if that entry is not relevant enough for your job. also, evaluate each entry by indicating how strongly it should be present on the resume from a score of 0-3.
+soft roles, phrases
+
+Step 2:
+
+Take a collection of elements, each consisting of a “what,” “how,” and “result” sentence fragment. For each element, combine the fragments into a single, seamless, grammatically correct sentence. Follow these rules exactly:
+
+Keyword usage: Explicitly replace words or phrases in the fragments with the provided soft skill or technical keywords only if the keywords naturally fit the action described in the fragment.
+
+No assumptions: Do not assume, infer, or add any skills, tools, languages, or context that are not explicitly stated in the fragments. Do not rely on typical associations, patterns, or common practices.
+
+Conciseness: Keep the sentence concise, clear, and readable. Avoid unnecessary words or filler.
+
+Literal integration: Only include keywords that can be directly and naturally integrated into the fragment’s action. If a keyword does not fit literally, omit it. If keywords are placed, bold them.
+
+Formatting: Enclose the final sentence in single quotes, like this: 'This is the sentence.'
+
+Strict adherence: Treat each fragment independently and only use information and keywords explicitly provided. No guessing or extrapolation is allowed.

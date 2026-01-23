@@ -1,0 +1,83 @@
+
+
+Python
+
+AWS
+
+CI/CD
+
+RESTful APIs
+
+Backend development
+
+Cloud infrastructure
+
+Automation
+
+AWS Lambda
+
+Jenkins
+
+GitHub Actions
+
+OAuth2
+
+JWT
+
+Flask
+
+Scripting
+
+Bash
+
+API design
+
+DevOps
+
+Infrastructure-as-code
+
+Docker
+
+Monitoring
+
+Chart.js
+
+Code reviews
+
+Documentation
+
+Agile
+
+Full-stack
+
+React
+
+Netlify
+
+Software engineering
+
+Cloud-native
+
+Authorization
+
+Authentication
+
+Deployment
+
+Infrastructure scalability
+
+Problem-solving
+
+Open-source
+
+Team collaboration
+
+Security
+
+Continuous delivery
+
+Cross-functional teams
+
+Scalable systems
+
+Maintainable code

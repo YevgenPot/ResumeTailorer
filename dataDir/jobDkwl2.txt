@@ -1,0 +1,51 @@
+API integration
+
+Microservices
+
+Serverless computing
+
+Cloud automation
+
+CI/CD best practices
+
+Container orchestration
+
+Python scripting
+
+REST API design
+
+Backend architecture
+
+Cloud deployment
+
+System monitoring
+
+Logging and observability
+
+Configuration management
+
+Agile development practices
+
+Version control
+
+Code quality tools
+
+Modular software design
+
+Event-driven architecture
+
+Lightweight frameworks
+
+Unit testing
+
+Continuous integration
+
+Deployment pipelines
+
+Service scalability
+
+Error handling
+
+Performance optimization
+
+Documentation standards

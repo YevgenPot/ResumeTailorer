@@ -1,0 +1,197 @@
+contact_section:
+  name: Yevgeniy Potapov
+  contact:
+    phone: +1-936-367-8316
+    email: yevgeniypotapov1026@gmail.com
+    linkedin: null
+    portfolio: https://github.com/yevgenpot
+  location:
+    city: Houston
+    state: TX
+    immigration_status: US Citizen
+summary:
+  include: false
+  reason: Relocating
+  text: Moving to New York City on January 2026 but can move sooner if needed.
+education_certificates:
+  entries:
+  - type: education
+    degree: B.S.
+    major: Computer Science
+    institution: University of Houston - Clear Lake
+    graduation_date: '2025'
+  - type: degree
+    name: Bacherlor of Science in Computer Science
+work_history:
+  include: false
+  entries:
+  - title: 
+    company: 
+    location: 
+    date:
+      start: 
+      end: 
+    summary: 
+    experiences:
+    - what: 
+      how: 
+      result: 
+      full: 
+projects:
+  include: true
+  entries:
+  - title: AI Assisted Resume Tailorer
+    company: Personal
+    summary: 'Built and optimized a multi-level AI assisted resume tailoring system using semantic similarity and automated rendering for better fitting job descriptions.'
+    experiences:
+    - what: 'Implemented a parser to load and validate YAML resumes..  _[Potential Matches]_ ->  (Maintainable Code : 0.26) (Feature Engineering : 0.21) (Model Deployment : 0.21) (Automation : 0.20)'
+      how: 'Built a Python class intended for single instantiation and shared application state..  _[Potential Matches]_ ->  (Python : 1.00) (Object-Oriented Programming : 0.31) (Maintainable Code : 0.24) (OOP : 0.23) (Model Deployment : 0.23)'
+      result: 'Centralized resume ingestion and ensured consistent downstream processing..  _[Potential Matches]_ ->  (Research and Development : 0.26) (Team Collaboration : 0.25) (Production ML Systems : 0.25) (Cross-Functional Teams : 0.24)'
+      full: 'Implemented a Python class using OOP to load and validate YAML resumes with maintainable code, enabling feature engineering and automation while centralizing resume ingestion for consistent downstream processing in production ML systems across cross-functional teams.'
+    - what: 'Extracted structured keywords from technical job descriptions using an LLM..  _[Potential Matches]_ ->  (Natural Language Processing : 0.46) (NLP : 0.40) (Enterprise Machine Learning : 0.32) (LLMs : 0.32)'
+      how: 'Prompted an LLM to analyze job descriptions and return normalized keyword lists..  _[Potential Matches]_ ->  (Results-Driven : 0.42) (NLP : 0.42) (Natural Language Processing : 0.41) (Research Experience : 0.38)'
+      result: 'Converted unstructured requirements into comparable semantic inputs..  _[Potential Matches]_ ->  (Natural Language Processing : 0.38) (Feature Engineering : 0.36) (Data Preprocessing : 0.33) (NLP : 0.32)'
+      full: 'Extracted structured keywords from technical job descriptions using LLMs and NLP by prompting the model to analyze descriptions and return normalized keyword lists, converting unstructured requirements into comparable semantic inputs for feature engineering and data preprocessing.'
+    - what: 'Implemented semantic matching between resumes and job description keywords..  _[Potential Matches]_ ->  (Natural Language Processing : 0.37) (Text Analytics : 0.33) (Data Preprocessing : 0.31) (Enterprise Machine Learning : 0.31)'
+      how: 'Used sentence transformer embeddings with cosine similarity scoring..  _[Potential Matches]_ ->  (Large Language Models : 0.50) (NLP : 0.38) (Natural Language Processing : 0.33) (Text Analytics : 0.30)'
+      result: 'Enabled meaning-based relevance scoring beyond keyword matching..  _[Potential Matches]_ ->  (Results-Driven : 0.42) (Natural Language Processing : 0.38) (Text Analytics : 0.36) (NLP : 0.34)'
+      full: 'Implemented semantic matching between resumes and job description keywords using sentence transformer embeddings and cosine similarity, leveraging NLP and LLMs to enable meaning-based relevance scoring for text analytics, data preprocessing, and enterprise ML.'
+    - what: 'Added an LLM validation step to finalize matching decisions..  _[Potential Matches]_ ->  (LLMs : 0.42) (Model Validation : 0.37) (Results-Driven : 0.32) (Model Selection : 0.26)'
+      how: 'Fed similarity results back into an LLM for contextual sanity checking..  _[Potential Matches]_ ->  (Natural Language Processing : 0.37) (NLP : 0.37) (Results-Driven : 0.35) (Real-World ML Solutions : 0.32)'
+      result: 'Reduced false positives and improved match reliability..  _[Potential Matches]_ ->  (Results-Driven : 0.31) (Data Cleansing : 0.29) (Team Collaboration : 0.24) (Applied Machine Learning : 0.24)'
+      full: 'Added an LLM validation step by feeding similarity results back for contextual sanity checking, using NLP to reduce false positives, improve match reliability, and enhance data cleansing.'
+    - what: 'Dynamically filtered resume sections based on job relevance..  _[Potential Matches]_ ->  (Entry-Level Role : 0.29) (Entry Level Machine Learning Engineer : 0.26) (Results-Driven : 0.24) (Early Career : 0.23)'
+      how: 'Removed low-scoring sections using similarity results before rendering..  _[Potential Matches]_ ->  (Clean Code : 0.27) (Data Cleansing : 0.26) (Data Preprocessing : 0.24) (Applied Machine Learning : 0.23)'
+      result: 'Produced targeted resumes optimized for specific job descriptions..  _[Potential Matches]_ ->  (Entry-Level Role : 0.35) (Results-Driven : 0.33) (Research Experience : 0.31) (Hybrid Work : 0.31)'
+      full: null
+    - what: 'Built a generator to prepare filtered resume content for output..  _[Potential Matches]_ ->  (Data Preprocessing : 0.32) (Text Analytics : 0.30) (Results-Driven : 0.29) (NLP : 0.29)'
+      how: 'Combined parsed data and match scores into structured output logic..  _[Potential Matches]_ ->  (Data Preprocessing : 0.53) (Natural Language Processing : 0.48) (NLP : 0.40) (Results-Driven : 0.36)'
+      result: 'Enabled automated, relevance-aware resume customization..  _[Potential Matches]_ ->  (Results-Driven : 0.31) (Entry-Level Role : 0.28) (Internship Experience : 0.26) (Hybrid Work : 0.25)'
+      full: 'Built a generator to prepare filtered resume content by combining parsed data and match scores into structured output, leveraging NLP and data preprocessing to enable automated, results-driven resume customization for entry-level roles.'
+    - what: 'Implemented a web renderer for formatted resume output..  _[Potential Matches]_ ->  (Hybrid Work : 0.25) (Java : 0.24) (Prototyping : 0.24) (Early Career : 0.23)'
+      how: 'Used Jinja2 templates to render structured data into HTML..  _[Potential Matches]_ ->  (Data Preprocessing : 0.21) (Clean Code : 0.20) (Java : 0.16) (Model Deployment : 0.15)'
+      result: 'Separated presentation from logic and ensured consistent formatting..  _[Potential Matches]_ ->  (Coding Standards : 0.44) (Results-Driven : 0.35) (Maintainable Code : 0.34) (Clean Code : 0.32)'
+      full: null
+    - what: 'Designed the main execution flow coordinating all core components..  _[Potential Matches]_ ->  (R&D : 0.36) (Object-Oriented Programming : 0.35) (Feature Engineering : 0.35) (Research and Development : 0.34)'
+      how: 'Orchestrated parser, matcher, generator, and renderer in a controlled loop..  _[Potential Matches]_ ->  (Natural Language Processing : 0.40) (Voice Processing : 0.36) (NLP : 0.36) (Speech Recognition : 0.33)'
+      result: 'Maintained predictable execution and simplified state management..  _[Potential Matches]_ ->  (Scalable Solutions : 0.35) (Automation : 0.34) (Maintainable Code : 0.34) (Results-Driven : 0.33)'
+      full: null
+    - what: 'Wrote module-level tests and documented requirements and design..  _[Potential Matches]_ ->  (Prototyping : 0.43) (Research and Development : 0.41) (Research Experience : 0.40) (Feature Engineering : 0.36)'
+      how: 'Created targeted tests and published MkDocs documentation..  _[Potential Matches]_ ->  (Research and Development : 0.37) (Results-Driven : 0.35) (Research Experience : 0.34) (Prototyping : 0.32)'
+      result: 'Improved reliability and demonstrated disciplined solo engineering practices..  _[Potential Matches]_ ->  (Team Collaboration : 0.40) (Results-Driven : 0.37) (Maintainable Code : 0.33) (Automotive Technology : 0.33)'
+      full: 'Wrote module-level tests and documented requirements using MkDocs, applying prototyping and R&D practices to improve reliability, maintainable code, and demonstrate disciplined, results-driven solo engineering.'
+  - title: Tower Upgrade Planner
+    company: Personal
+    summary: 'Built a greedy optimization system modeling tower upgrade paths with linked lists, computing efficient upgrade sequences under constrained rules and rendering results as structured text output.'
+    experiences:
+    - what: 'Processed manually structured text inputs representing tower and upgrade data..  _[Potential Matches]_ ->  (Natural Language Processing : 0.49) (Data Preprocessing : 0.48) (Text Analytics : 0.42) (Feature Engineering : 0.41)'
+      how: 'Converted dictionaries into normalized internal structures before computation..  _[Potential Matches]_ ->  (Neural Networks : 0.42) (Algorithms : 0.39) (Large Language Models : 0.39) (Deep Learning : 0.38)'
+      result: 'Enabled algorithmic processing despite lack of formal schema..  _[Potential Matches]_ ->  (Algorithms : 0.52) (Object-Oriented Programming : 0.47) (Feature Engineering : 0.43) (Data Science : 0.38)'
+      full: 'Processed manually structured text inputs representing tower and upgrade data by converting dictionaries into normalized internal structures, leveraging NLP and data preprocessing for feature engineering, which enabled algorithmic processing despite the lack of a formal schema.'
+    - what: 'Modeled tower upgrades as linked-list-based upgrade paths..  _[Potential Matches]_ ->  (Model Lifecycle : 0.31) (Feature Engineering : 0.29) (Scalable Solutions : 0.28) (Model Deployment : 0.26)'
+      how: 'Constructed master nodes with multiple linked upgrade chains..  _[Potential Matches]_ ->  (Scalable Solutions : 0.30) (Model Lifecycle : 0.24) (Emerging Technologies : 0.22) (Production ML Systems : 0.22)'
+      result: 'Allowed traversal and comparison of independent upgrade paths..  _[Potential Matches]_ ->  (Maintainable Code : 0.24) (Model Deployment : 0.23) (Feature Engineering : 0.21) (Coding Standards : 0.21)'
+      full: null
+    - what: 'Implemented support for towers with multiple upgrade paths..  _[Potential Matches]_ ->  (Scalable Solutions : 0.32) (Emerging Technologies : 0.27) (Feature Creation : 0.27) (Feature Engineering : 0.26)'
+      how: 'Detected path identifiers and dynamically attached linked lists..  _[Potential Matches]_ ->  (Object-Oriented Programming : 0.20) (C++ : 0.17) (Maintainable Code : 0.17) (Java : 0.16)'
+      result: 'Generalized the system beyond single linear upgrade trees..  _[Potential Matches]_ ->  (Scalable Solutions : 0.40) (Algorithms : 0.30) (Algorithm Design : 0.29) (Feature Engineering : 0.27)'
+      full: 'Implemented Feature Creation by detecting path identifiers and dynamically attaching linked lists, generalizing the system as a Scalable Solution beyond single linear upgrade trees.'
+    - what: 'Computed cumulative and delta-based upgrade statistics..  _[Potential Matches]_ ->  (Model Lifecycle : 0.26) (Maintainable Code : 0.26) (Bottom-Line Impact : 0.24) (Results-Driven : 0.24)'
+      how: 'Recursively propagated cost and stat deltas through linked nodes..  _[Potential Matches]_ ->  (Large-Scale Data Analysis : 0.40) (Algorithms : 0.32) (Neural Networks : 0.31) (Graduate-Level Machine Learning : 0.31)'
+      result: 'Enabled accurate modeling of upgrade effects over time..  _[Potential Matches]_ ->  (Model Lifecycle : 0.36) (Feature Engineering : 0.35) (Bottom-Line Impact : 0.31) (Statistical Modeling : 0.30)'
+      full: 'Computed cumulative and delta-based upgrade statistics by recursively propagating cost and stat deltas through linked nodes, enabling accurate modeling as Feature Engineering over time.'
+    - what: 'Defined efficiency metrics for evaluating upgrade decisions..  _[Potential Matches]_ ->  (Coding Standards : 0.30) (Bottom-Line Impact : 0.29) (Maintainable Code : 0.27) (Results-Driven : 0.26)'
+      how: 'Computed DPS and cost-efficiency from damage, reload, and burst stats..  _[Potential Matches]_ ->  (Large-Scale Data Analysis : 0.29) (Results-Driven : 0.26) (Algorithms : 0.26) (Bottom-Line Impact : 0.26)'
+      result: 'Provided a quantitative basis for greedy optimization..  _[Potential Matches]_ ->  (Neural Networks : 0.44) (Applied Machine Learning : 0.42) (Algorithms : 0.42) (Deep Learning : 0.41)'
+      full: null
+    - what: 'Implemented a greedy algorithm to select upgrade sequences..  _[Potential Matches]_ ->  (Feature Engineering : 0.37) (Algorithm Design : 0.35) (Algorithms : 0.34) (Data Preprocessing : 0.32)'
+      how: 'Evaluated valid upgrade choices and selected minimal efficiency cost..  _[Potential Matches]_ ->  (Automotive Technology : 0.30) (Maintainable Code : 0.27) (Model Lifecycle : 0.26) (Technical Curiosity : 0.25)'
+      result: 'Generated near-optimal upgrade paths under practical constraints..  _[Potential Matches]_ ->  (Scalable Solutions : 0.30) (Model Deployment : 0.28) (Feature Engineering : 0.27) (Algorithm Design : 0.26)'
+      full: 'Implemented a greedy Algorithm Design by evaluating valid upgrade choices and selecting minimal efficiency cost, generating near-optimal upgrade paths as a Scalable Solution under practical constraints.'
+    - what: 'Enforced upgrade selection constraints during optimization..  _[Potential Matches]_ ->  (Feature Engineering : 0.31) (Model Selection : 0.27) (Scalable Solutions : 0.26) (Model Lifecycle : 0.25)'
+      how: 'Tracked per-path state using a custom choice controller..  _[Potential Matches]_ ->  (Model Deployment : 0.26) (Model Selection : 0.23) (Connected Vehicle Technology : 0.20) (Model Lifecycle : 0.19)'
+      result: 'Prevented invalid or unrealistic upgrade sequences..  _[Potential Matches]_ ->  (Model Lifecycle : 0.31) (Technical Curiosity : 0.30) (Feature Engineering : 0.30) (Results-Driven : 0.28)'
+      full: null
+    - what: 'Optimized upgrade choice selection using a priority queue..  _[Potential Matches]_ ->  (Model Selection : 0.29) (Feature Engineering : 0.26) (Algorithm Design : 0.26) (Scalable Solutions : 0.26)'
+      how: 'Applied heap-based ranking of candidate upgrade models..  _[Potential Matches]_ ->  (Model Selection : 0.36) (Feature Engineering : 0.32) (Model Lifecycle : 0.32) (Model Deployment : 0.27)'
+      result: 'Improved greedy decision efficiency and clarity..  _[Potential Matches]_ ->  (Results-Driven : 0.40) (Model Selection : 0.33) (Algorithm Design : 0.32) (Applied Machine Learning : 0.31)'
+      full: 'Optimized upgrade choice selection using a priority queue by applying heap-based ranking of candidate upgrade models, improving greedy decision efficiency through Algorithm Design.'
+    - what: 'Generated final upgrade sequences as structured linked lists..  _[Potential Matches]_ ->  (Maintainable Code : 0.26) (Model Lifecycle : 0.26) (Feature Engineering : 0.25) (Algorithms : 0.24)'
+      how: 'Appended selected upgrades to modeled tower sequences..  _[Potential Matches]_ ->  (Model Lifecycle : 0.33) (Model Selection : 0.30) (Model Deployment : 0.28) (Feature Creation : 0.28)'
+      result: 'Produced consumable upgrade paths for rendering..  _[Potential Matches]_ ->  (Model Lifecycle : 0.26) (Model Deployment : 0.25) (Maintainable Code : 0.24) (Production ML Systems : 0.24)'
+      full: null
+  - title: 'CAPSTONE Final: Game Development Management'
+    company: Coursework
+    summary: 'Led process coordination and documentation for a six-person Unity game capstone, organizing agile-style sprints, meetings, presentations, and course-required deliverables.'
+    experiences:
+    - what: 'Coordinated a pseudo-agile workflow for a six-person team..  _[Potential Matches]_ ->  (Team Collaboration : 0.61) (Agile Scrum Environment : 0.56) (Scrum : 0.56) (Agile : 0.51)'
+      how: 'Planned weekly sprints with structured agendas and recurring meetings..  _[Potential Matches]_ ->  (Scrum : 0.57) (Team Collaboration : 0.54) (Agile Scrum Environment : 0.50) (Agile : 0.46)'
+      result: 'Maintained consistent progress and shared understanding across the team..  _[Potential Matches]_ ->  (Team Collaboration : 0.61) (Cross-Functional Teams : 0.49) (Results-Driven : 0.43) (Scrum : 0.39)'
+      full: 'Coordinated a pseudo-agile workflow for a six-person team by planning weekly Scrum sprints with structured agendas and recurring meetings, maintaining consistent progress and Team Collaboration across the team.'
+    - what: 'Facilitated and time-managed every team meeting..  _[Potential Matches]_ ->  (Team Collaboration : 0.60) (Cross-Functional Teams : 0.50) (Scrum : 0.45) (Agile Scrum Environment : 0.35)'
+      how: 'Opened meetings and enforced a fixed three-part discussion structure..  _[Potential Matches]_ ->  (Team Collaboration : 0.31) (Cross-Functional Teams : 0.28) (Research and Development : 0.27) (Coding Standards : 0.27)'
+      result: 'Kept meetings focused, productive, and scope-aligned..  _[Potential Matches]_ ->  (Team Collaboration : 0.48) (Cross-Functional Teams : 0.42) (Results-Driven : 0.32) (Innovation : 0.31)'
+      full: null
+    - what: 'Defined the meeting structure for sprint reflection and planning..  _[Potential Matches]_ ->  (Scrum : 0.58) (Agile Scrum Environment : 0.52) (Team Collaboration : 0.52) (Cross-Functional Teams : 0.45)'
+      how: 'Segmented meetings into reflection, review, and forward-planning phases..  _[Potential Matches]_ ->  (Team Collaboration : 0.46) (Cross-Functional Teams : 0.42) (Scrum : 0.41) (Agile Scrum Environment : 0.33)'
+      result: 'Improved clarity on progress, blockers, and upcoming goals..  _[Potential Matches]_ ->  (Results-Driven : 0.41) (Bottom-Line Impact : 0.30) (Research and Development : 0.27) (Team Collaboration : 0.23)'
+      full: 'Defined the meeting structure for sprint reflection and planning by segmenting meetings into reflection, review, and forward-planning phases, improving clarity on progress, blockers, and upcoming goals.'
+    - what: 'Recorded and maintained detailed notes for every meeting..  _[Potential Matches]_ ->  (Team Collaboration : 0.33) (Results-Driven : 0.24) (NLP : 0.21) (Research Experience : 0.21)'
+      how: 'Cataloged decisions, action items, and sprint goals consistently..  _[Potential Matches]_ ->  (Scrum : 0.47) (Results-Driven : 0.42) (Agile Scrum Environment : 0.39) (Agile : 0.38)'
+      result: 'Preserved project continuity and reduced miscommunication..  _[Potential Matches]_ ->  (Team Collaboration : 0.50) (Cross-Functional Teams : 0.46) (Results-Driven : 0.37) (Research and Development : 0.36)'
+      full: null
+    - what: 'Authored the majority of project documentation..  _[Potential Matches]_ ->  (Research Experience : 0.45) (R&D : 0.35) (Internship Experience : 0.34) (Early Career : 0.33)'
+      how: 'Drafted, revised, and finalized approximately 80% of written deliverables..  _[Potential Matches]_ ->  (Results-Driven : 0.31) (Scrum : 0.23) (Bottom-Line Impact : 0.22) (Hybrid Work : 0.22)'
+      result: 'Ensured completeness and consistency across all submissions..  _[Potential Matches]_ ->  (Results-Driven : 0.49) (Coding Standards : 0.44) (Data Cleansing : 0.37) (Maintainable Code : 0.37)'
+      full: null
+    - what: 'Wrote core planning and design documents..  _[Potential Matches]_ ->  (Research and Development : 0.42) (R&D : 0.41) (Team Collaboration : 0.39) (Innovation : 0.37)'
+      how: 'Authored team charter, requirements, design, vision, scope, and plan documents..  _[Potential Matches]_ ->  (Team Collaboration : 0.53) (Scrum : 0.40) (Cross-Functional Teams : 0.38) (Agile Scrum Environment : 0.34)'
+      result: 'Satisfied course requirements with clear, structured documentation..  _[Potential Matches]_ ->  (Coding Standards : 0.36) (Results-Driven : 0.35) (Research Experience : 0.32) (Research and Development : 0.32)'
+      full: null
+    - what: 'Created the project test plan..  _[Potential Matches]_ ->  (Prototyping : 0.46) (Research and Development : 0.42) (Research Methodology : 0.40) (Feature Creation : 0.39)'
+      how: 'Defined testing scope, strategies, and evaluation criteria..  _[Potential Matches]_ ->  (Research and Development : 0.37) (Research Methodology : 0.36) (Coding Standards : 0.34) (Model Validation : 0.33)'
+      result: 'Provided a formal testing framework for course evaluation..  _[Potential Matches]_ ->  (Model Validation : 0.32) (Object-Oriented Programming : 0.31) (Results-Driven : 0.30) (Coding Standards : 0.29)'
+      full: null
+    - what: 'Produced UML diagrams for documentation and presentations..  _[Potential Matches]_ ->  (Prototyping : 0.46) (Feature Engineering : 0.40) (Object-Oriented Programming : 0.36) (Research and Development : 0.33)'
+      how: 'Designed and formatted diagrams aligned with system design..  _[Potential Matches]_ ->  (Prototyping : 0.39) (Model Lifecycle : 0.37) (Coding Standards : 0.36) (Feature Engineering : 0.35)'
+      result: 'Improved technical clarity for reviewers and instructors..  _[Potential Matches]_ ->  (Coding Standards : 0.38) (Results-Driven : 0.38) (Model Validation : 0.28) (NLP : 0.28)'
+      full: null
+    - what: 'Owned formatting and visual consistency of all presentations..  _[Potential Matches]_ ->  (Ownership Mentality : 0.35) (Coding Standards : 0.34) (Team Collaboration : 0.29) (Innovation : 0.25)'
+      how: 'Standardized slide layouts, visuals, and diagram placement..  _[Potential Matches]_ ->  (Coding Standards : 0.39) (Prototyping : 0.35) (Object-Oriented Programming : 0.30) (Team Collaboration : 0.28)'
+      result: 'Delivered professional, cohesive presentations..  _[Potential Matches]_ ->  (Team Collaboration : 0.40) (Creative Problem Solving : 0.36) (Innovation : 0.36) (Research Experience : 0.33)'
+      full: null
+    - what: 'Led presentation structure and timing..  _[Potential Matches]_ ->  (Prototyping : 0.17) (Emerging Technologies : 0.13) (Research and Development : 0.11) (Results-Driven : 0.10)'
+      how: 'Organized topics, speaker order, and time allocation..  _[Potential Matches]_ ->  (Team Collaboration : 0.35) (Speech Recognition : 0.34) (NLP : 0.30) (Cross-Functional Teams : 0.29)'
+      result: 'Ensured clear delivery within strict presentation constraints..  _[Potential Matches]_ ->  (Results-Driven : 0.34) (Coding Standards : 0.32) (Model Validation : 0.29) (Prototyping : 0.27)'
+      full: null
+  - title: HAWKS Language
+    company: Coursework
+    summary: 'Developed a C-based scanner and recursive-descent parser for a custom EBNF language, handling tokenization, syntax validation, identifier tracking, and error reporting with line-level precision.'
+    experiences:
+    - what: 'Built a parser validating syntax according to Falcon language EBNF rules..  _[Potential Matches]_ ->  (Natural Language Processing : 0.46) (NLP : 0.36) (Model Validation : 0.35) (Coding Standards : 0.34)'
+      how: 'Implemented recursive-descent functions for program structure, declarations, statements, expressions, and comparisons.  _[Potential Matches]_ ->  (Object-Oriented Programming : 0.39) (C++ : 0.38) (Algorithms : 0.38) (Coding Standards : 0.36)'
+      result: 'Facilitated clear, automated syntax validation for Falcon programs..  _[Potential Matches]_ ->  (Coding Standards : 0.41) (Maintainable Code : 0.40) (Model Validation : 0.35) (Feature Engineering : 0.34)'
+      full: 'Built a parser validating syntax according to Falcon language EBNF rules using recursive-descent functions for statements, expressions, and comparisons, facilitating automated syntax validation.'
+    - what: 'Implemented error reporting for token recognition and parsing stages..  _[Potential Matches]_ ->  (Natural Language Processing : 0.44) (Voice Processing : 0.32) (Speech Recognition : 0.29) (Coding Standards : 0.28)'
+      how: 'Developed line-numbered messages triggered on invalid tokens, unexpected symbols, or EBNF violations.  _[Potential Matches]_ ->  (Maintainable Code : 0.22) (Coding Standards : 0.21) (Natural Language Processing : 0.17) (Large Language Models : 0.16)'
+      result: 'Improved program reliability and usability by pinpointing syntax errors for debugging..  _[Potential Matches]_ ->  (Maintainable Code : 0.47) (Java : 0.41) (Object-Oriented Programming : 0.41) (C++ : 0.39)'
+      full: 'Implemented error reporting for token recognition and parsing stages with line-numbered messages for invalid tokens and EBNF violations, improving program reliability by pinpointing syntax errors.'
+    - what: 'Managed a table of declared identifiers to detect duplicates..  _[Potential Matches]_ ->  (Data Cleansing : 0.39) (Data Preprocessing : 0.34) (Maintainable Code : 0.32) (Coding Standards : 0.31)'
+      how: 'Stored identifiers from lexemes in a table, checked for duplicates before insertion, and enforced single declarations per scope..  _[Potential Matches]_ ->  (Natural Language Processing : 0.41) (NLP : 0.35) (Coding Standards : 0.35) (Data Preprocessing : 0.33)'
+      result: 'Prevented redeclaration errors, supporting semantic correctness and structured code analysis..  _[Potential Matches]_ ->  (Maintainable Code : 0.47) (Coding Standards : 0.45) (Object-Oriented Programming : 0.43) (Clean Code : 0.33)'
+      full: 'Managed a table of declared identifiers to detect duplicates by storing lexemes and checking duplicates per scope, preventing redeclaration errors.'
+internships:
+  include: false
+  entries:
+  - title: 
+    company: 
+    location: 
+    date:
+      start: 
+      end: 
+    summary: 
+    experiences:
+    - what: 
+      how: 
+      result: 
+      full: 

@@ -1,0 +1,12 @@
+site_name: Resume Parser Docs
+
+theme: readthedocs
+
+extra_css:
+  - style.css
+
+nav:
+  - Home: index.md
+  - Requirements: requirements.md
+  - Design: design.md
+  - Model: model.md

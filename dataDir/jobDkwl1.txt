@@ -1,0 +1,85 @@
+Machine Learning Engineer
+Data Scientist
+Deep Learning
+Neural Networks
+TensorFlow
+PyTorch
+Scikit-learn
+Pandas
+NumPy
+Data pipelines
+ETL
+Statistical modeling
+Hypothesis testing
+Natural Language Processing
+Computer Vision
+Model training
+Model evaluation
+iOS Developer
+Android Developer
+Swift
+Objective-C
+Kotlin
+Java
+Android SDK
+React Native
+Flutter
+Mobile UI
+Mobile UX
+App Store deployment
+Google Play deployment
+C
+C++
+Firmware development
+Microcontrollers
+IoT
+Embedded Linux
+Serial communication
+UART
+SPI
+I2C
+Real-time operating systems
+Kubernetes
+Docker
+Terraform
+Ansible
+CloudFormation
+Azure
+Google Cloud Platform
+Site Reliability Engineering
+Network administration
+Prometheus
+Grafana
+On-prem infrastructure
+UI Designer
+UX Designer
+Figma
+Sketch
+Adobe XD
+Accessibility
+WCAG compliance
+Tailwind
+Sass
+LESS
+Responsive design
+TypeScript architecture
+Engineering Manager
+Tech Lead
+Agile leadership
+Scrum master
+Roadmap planning
+Budgeting
+Cross-functional coordination
+Stakeholder management
+Performance reviews
+Mentorship
+Penetration testing
+Vulnerability assessment
+Security hardening
+SOC 2
+ISO 27001
+GDPR compliance
+Identity and Access Management
+Security engineering
+Cryptography
+Risk assessment

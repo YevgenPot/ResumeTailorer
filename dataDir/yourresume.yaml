@@ -1,0 +1,90 @@
+contact_section:
+    name: "John Doe"
+    contact:
+      phone: "+1-555-123-4567"
+      email: "john.doe@email.com"
+      linkedin: "https://linkedin.com/in/johndoe"
+      portfolio: "https://johndoe.dev"
+    location:
+      city: "San Francisco"
+      state: "CA"
+      immigration_status: "US Citizen"
+
+summary:
+    include: true                # Only include if conditions met
+    reason: "Relocating"
+    text: "Moving to New York City on January 2026 but can move sooner if needed."
+
+# Changing industries
+#  ○ Example: I am transitioning to X from Y
+# Need to relocate/move out of state for the job
+#  ○ Moving to CITY on X-Date but can move sooner if needed
+# Need Sponsorship or are on a VISA
+#  ○ Explain briefly how the "Y" can work with your VISA as most HMs/Recruiters are not aware of the
+#   difference between H1B, OPT, TN, and more. They may not know that they can work with your VISA.
+
+education_certificates:
+  entries:
+    - type: "education"
+      degree: "B.S."
+      major: "Computer Science"
+      institution: "University of California, Berkeley"
+      graduation_date: "2020" 
+      ## if date > 3 years, "Graduated"
+    - type: "certificate"
+      name: "AWS Certified Developer - Associate"
+
+work_history:
+  entries:
+    - title: "Software Engineer"
+      company: "TechCorp"
+      location: "CA"
+      date:
+        start: "June 2020"
+        end: "current"
+      # summary sentence of what you did at this job, this sentence is basic and keyword loaded
+      summary: "Developed scalable APIs using Python and AWS Lambda to support core platform features"
+      # a collection of sentences composed of a what, how, and result sentence fragment
+      experiences:
+        - what: "Improved CI/CD pipelines"
+          how: "Used Jenkins to automate staging deployments"
+          result: "Reduced deployment time by 40%"
+          full: 
+        - what: "Implemented authentication system"
+          how: "Integrated OAuth2 with company login"
+          result: "Enhanced login security and user experience"
+          full: 
+
+projects:
+  entries:
+    - title: "Personal Portfolio Website"
+      company: "Personal"
+      summary: "Built and deployed personal portfolio using React and Netlify to showcase projects"
+      experiences:
+        - what: "Implemented authentication system"
+          how: "Integrated OAuth2 with company login"
+          result: "Enhanced login security and user experience"
+          full:
+
+internships:
+  entries:
+    - title: "Software Engineer Intern"
+      company: "TechCorp"
+      location: "CA"
+      date:
+        start: "June 2020"
+        end: "current"
+      summary: "Developed scalable APIs using Python and AWS Lambda to support core platform features"
+      experiences:
+        - what: "Created internal dashboard"
+          how: "Used Flask and Chart.js to visualize deployment metrics for the DevOps team"
+          result: "Improved visibility into build performance and error tracking"
+          full:
+        - what: "Wrote automation scripts"
+          how: "Used Python and Bash to automate log rotation and cleanup on development servers"
+          result: "Saved 5+ hours per week in manual maintenance"
+          full:
+        - what: "Participated in code reviews"
+          how: "Reviewed pull requests and contributed documentation improvements"
+          result: "Helped improve code readability and onboarding experience for new interns"
+          full:
