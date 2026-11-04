@@ -1,9 +1,9 @@
 import os
 import yaml
 
-class ParserClass:
+class Parser:
 
-    def __init__(self, resume_file='yourresume.yaml', job_file='jobDkwl.txt'):
+    def __init__(self, resume_file='resume.yaml', job_file='jobDkwl.txt'):
         self.resume_file = resume_file
         self.job_file = job_file
         self.resume_dict = {}
@@ -88,27 +88,27 @@ class ParserClass:
         if allowed_keys not in dictionary.keys():
             raise ValueError(f"Invalid section name: {dictionary.keys()}")
 
-        list = []
-        hash = [] # preserves the shape of the original dict
+        flat_list = []
+        count_hash = [] # preserves the shape of the original dict
         for entry in dictionary.get("entries"):
             i=0
-            list.append(entry["summary"])
+            flat_list.append(entry["summary"])
             i+=1
             for experience in entry.get("experiences"):
-                list.append( f"{experience.get('what')}")
-                list.append( f"{experience.get('how')}")
-                list.append( f"{experience.get('result')}")
+                flat_list.append( f"{experience.get('what')}")
+                flat_list.append( f"{experience.get('how')}")
+                flat_list.append( f"{experience.get('result')}")
                 i+=3
-            hash.append(i)   
-        return list, hash
+            count_hash.append(i)   
+        return flat_list, count_hash
     
-    def update_entries_with_list_hash(self, section_name, list, hash): ## used for work_hisotry, projects, and internships
+    def update_entries_with_list_hash(self, section_name, flist, chash): ## used for work_hisotry, projects, and internships
         section = self.resume_dict.get(section_name)
         i=0
-        for ind, count in enumerate(hash):
-            section["entries"][ind]["summary"] += list[i] ; i+=1 ## append the entry string
+        for ind, count in enumerate(chash):
+            section["entries"][ind]["summary"] += flist[i] ; i+=1 ## append the entry string
             
             for experience in section["entries"][ind]["experiences"]:
-                experience["what"] += list[i]; i+=1
-                experience["how"] += list[i]; i+=1
-                experience["result"] += list[i]; i+=1
+                experience["what"] += flist[i]; i+=1
+                experience["how"] += flist[i]; i+=1
+                experience["result"] += flist[i]; i+=1

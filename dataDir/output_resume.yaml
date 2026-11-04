@@ -1,0 +1,74 @@
+contact_section:
+  name: John Doe
+  contact:
+    phone: +1-555-123-4567
+    email: john.doe@email.com
+    linkedin: https://linkedin.com/in/johndoe
+    portfolio: https://johndoe.dev
+  location:
+    city: San Francisco
+    state: CA
+    immigration_status: US Citizen
+summary:
+  include: true
+  reason: Relocating
+  text: Moving to New York City on January 2026 but can move sooner if needed.
+education_certificates:
+  entries:
+  - type: education
+    degree: B.S.
+    major: Computer Science
+    institution: University of California, Berkeley
+    graduation_date: '2020'
+  - type: certificate
+    name: AWS Certified Developer - Associate
+work_history:
+  entries:
+  - title: Software Engineer
+    company: TechCorp
+    location: CA
+    date:
+      start: June 2020
+      end: current
+    summary: 'Developed scalable APIs using Python and AWS Lambda to support core platform features :: Potential matches :: ( Data infrastructure : 0.368 )( Data infrastructure : 0.368 )( Analytics applications : 0.320 )( Application integration : 0.304 )( Metadata development : 0.279 )( Data science solutions : 0.271 )( Metadata management : 0.251 )( Infrastructure management : 0.243 )( Analytics tools : 0.230 )'
+    experiences:
+    - what: 'Improved CI/CD pipelines :: Potential matches :: ( Solution delivery : 0.493 )( Process modeling : 0.478 )( Configuration tools : 0.432 )( Data preparation : 0.398 )( Data preparation : 0.398 )( Data science solutions : 0.374 )( Application integration : 0.359 )( Technical competencies : 0.339 )( Solution performance : 0.298 )'
+      how: 'Used Jenkins to automate staging deployments :: Potential matches :: ( Configuration tools : 0.311 )( Process modeling : 0.265 )( Infrastructure management : 0.236 )( Analytics configuration : 0.198 )( Solution delivery : 0.190 )( Operations research : 0.179 )( Application integration : 0.171 )( Analytics tools : 0.164 )( Advanced analytics : 0.150 )'
+      result: 'Reduced deployment time by 40% :: Potential matches :: ( Solution performance : 0.468 )( Solution delivery : 0.395 )( Operations Research : 0.249 )( Operations research : 0.249 )( Infrastructure management : 0.237 )( Solution research : 0.216 )( Performance validation : 0.212 )( Configuration tools : 0.209 )( Model performance : 0.208 )'
+      full: null
+    - what: 'Implemented authentication system :: Potential matches :: ( Application integration : 0.444 )( Data infrastructure : 0.355 )( Data infrastructure : 0.355 )( Analytical systems : 0.332 )( Data processing : 0.320 )( Analytics applications : 0.299 )( Solution research : 0.275 )( User experience validation : 0.263 )( Analytics integration : 0.261 )'
+      how: 'Integrated OAuth2 with company login :: Potential matches :: ( Application integration : 0.495 )( Analytics integration : 0.409 )( Client business processes : 0.163 )( Team collaboration : 0.144 )( Business analytics : 0.139 )( Analytics configuration : 0.134 )( Business acumen : 0.126 )( Information insights : 0.119 )( Analytics applications : 0.119 )'
+      result: 'Enhanced login security and user experience :: Potential matches :: ( User experience : 0.802 )( Application integration : 0.330 )( User experience validation : 0.330 )( Technical competencies : 0.237 )( EDA : 0.221 )( Solution delivery : 0.207 )( Solution performance : 0.199 )( Analytics applications : 0.182 )( Advanced analytics : 0.174 )'
+      full: null
+projects:
+  entries:
+  - title: Personal Portfolio Website
+    company: Personal
+    summary: 'Built and deployed personal portfolio using React and Netlify to showcase projects :: Potential matches :: ( Early career : 0.274 )( Entry-level experience : 0.270 )( Application integration : 0.241 )( Solution delivery : 0.211 )( User experience validation : 0.166 )( Metadata development : 0.157 )( Infrastructure management : 0.156 )( Model building : 0.148 )( Configuration tools : 0.145 )'
+    experiences:
+    - what: 'Implemented authentication system :: Potential matches :: ( Application integration : 0.444 )( Data infrastructure : 0.355 )( Data infrastructure : 0.355 )( Analytical systems : 0.332 )( Data processing : 0.320 )( Analytics applications : 0.299 )( Solution research : 0.275 )( User experience validation : 0.263 )( Analytics integration : 0.261 )'
+      how: 'Integrated OAuth2 with company login :: Potential matches :: ( Application integration : 0.495 )( Analytics integration : 0.409 )( Client business processes : 0.163 )( Team collaboration : 0.144 )( Business analytics : 0.139 )( Analytics configuration : 0.134 )( Business acumen : 0.126 )( Information insights : 0.119 )( Analytics applications : 0.119 )'
+      result: 'Enhanced login security and user experience :: Potential matches :: ( User experience : 0.802 )( Application integration : 0.330 )( User experience validation : 0.330 )( Technical competencies : 0.237 )( EDA : 0.221 )( Solution delivery : 0.207 )( Solution performance : 0.199 )( Analytics applications : 0.182 )( Advanced analytics : 0.174 )'
+      full: null
+internships:
+  entries:
+  - title: Software Engineer Intern
+    company: TechCorp
+    location: CA
+    date:
+      start: June 2020
+      end: current
+    summary: 'Developed scalable APIs using Python and AWS Lambda to support core platform features :: Potential matches :: ( Data infrastructure : 0.368 )( Data infrastructure : 0.368 )( Analytics applications : 0.320 )( Application integration : 0.304 )( Metadata development : 0.279 )( Data science solutions : 0.271 )( Metadata management : 0.251 )( Infrastructure management : 0.243 )( Analytics tools : 0.230 )'
+    experiences:
+    - what: 'Created internal dashboard :: Potential matches :: ( Analytics configuration : 0.458 )( Analytics integration : 0.434 )( Analytics tools : 0.397 )( Analytics applications : 0.392 )( Business analytics : 0.361 )( Configuration tools : 0.299 )( Analytical visualization : 0.291 )( Insight visualization : 0.282 )( Advanced analytics : 0.274 )'
+      how: 'Used Flask and Chart.js to visualize deployment metrics for the DevOps team :: Potential matches :: ( Analytics tools : 0.390 )( Analytics applications : 0.355 )( Business analytics : 0.336 )( Data visualization : 0.331 )( Analytical visualization : 0.330 )( Analytics integration : 0.312 )( Exploratory data analysis : 0.303 )( Exploratory data analysis : 0.303 )( Data visualization techniques : 0.303 )'
+      result: 'Improved visibility into build performance and error tracking :: Potential matches :: ( Performance validation : 0.564 )( Analytics tools : 0.447 )( Solution delivery : 0.420 )( Analytical visualization : 0.416 )( Insight visualization : 0.409 )( Actionable insights : 0.403 )( Infrastructure management : 0.395 )( Solution performance : 0.383 )( Configuration tools : 0.302 )'
+      full: null
+    - what: 'Wrote automation scripts :: Potential matches :: ( Configuration tools : 0.374 )( Advanced analytics : 0.358 )( Process modeling : 0.355 )( Operations research : 0.355 )( Operations Research : 0.355 )( Application integration : 0.328 )( Data processing : 0.320 )( Analytics applications : 0.295 )( Analytics tools : 0.288 )'
+      how: 'Used Python and Bash to automate log rotation and cleanup on development servers :: Potential matches :: ( Analytics applications : 0.290 )( Descriptive analytics : 0.284 )( Configuration tools : 0.277 )( Metadata maintenance : 0.267 )( Advanced analytics : 0.262 )( Analytics integration : 0.257 )( Analytics tools : 0.244 )( Metadata development : 0.233 )( Process modeling : 0.226 )'
+      result: 'Saved 5+ hours per week in manual maintenance :: Potential matches :: ( Infrastructure management : 0.420 )( Business problem solving : 0.377 )( Operations research : 0.350 )( Operations Research : 0.350 )( Specialized training : 0.348 )( Solution performance : 0.326 )( Problem solving : 0.303 )( Metadata maintenance : 0.286 )( Technical concepts : 0.282 )'
+      full: null
+    - what: 'Participated in code reviews :: Potential matches :: ( Team collaboration : 0.370 )( Solution research : 0.350 )( Actionable insights : 0.303 )( Graduate role : 0.301 )( User experience validation : 0.295 )( Analytical recommendations : 0.267 )( Independent judgment : 0.253 )( Entry-level experience : 0.253 )( Experience : 0.250 )'
+      how: 'Reviewed pull requests and contributed documentation improvements :: Potential matches :: ( Metadata development : 0.258 )( Metadata enhancement : 0.250 )( Metadata maintenance : 0.220 )( Metadata management : 0.217 )( Analytical recommendations : 0.204 )( Solution research : 0.200 )( Client business processes : 0.188 )( Actionable insights : 0.183 )( Solution delivery : 0.180 )'
+      result: 'Helped improve code readability and onboarding experience for new interns :: Potential matches :: ( Entry-level experience : 0.510 )( User experience : 0.497 )( Team collaboration : 0.439 )( Technical competencies : 0.435 )( Model building : 0.372 )( Graduate role : 0.287 )( Data preparation : 0.287 )( Data preparation : 0.287 )( Specialized training : 0.283 )'
+      full: null
